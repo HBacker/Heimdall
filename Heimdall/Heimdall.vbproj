@@ -46,6 +46,9 @@
   <PropertyGroup>
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>icons8_eye.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="Guna.UI">
       <HintPath>C:\Users\BİLGİSAYAR\Desktop\.NET\Guna.UI.dll</HintPath>
@@ -179,6 +182,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Guna.UI.dll" />
+    <Content Include="icons8_eye.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

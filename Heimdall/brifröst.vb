@@ -1,4 +1,4 @@
-﻿Public NotInheritable Class SplashScreen1
+﻿Public NotInheritable Class brifröst
 
     'TODO: Bu form uygulama için kolayca karşılama ekranı olarak ayarlanabilir; "Uygulama" sekmesine gittiğiniz
     '  Proje Tasarımcısı'nda yapılır ("Proje" menüsü altındaki "Özellikler").

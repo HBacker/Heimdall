@@ -54,13 +54,16 @@ Namespace My
             End Get
         End Property
         
-        <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.Configuration.DefaultSettingValueAttribute("6198782748")>  _
-        Public ReadOnly Property master() As String
+        Public Property master() As String
             Get
                 Return CType(Me("master"),String)
             End Get
+            Set
+                Me("master") = value
+            End Set
         End Property
     End Class
 End Namespace

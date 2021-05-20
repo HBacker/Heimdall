@@ -1,8 +1,8 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class login
-    Inherits System.Windows.Forms.UserControl
+Partial Class master_key
+    Inherits System.Windows.Forms.Form
 
-    'UserControl, bileşen listesini temizlemeyi bırakmayı geçersiz kılar.
+    'Form, bileşen listesini temizlemeyi bırakmayı geçersiz kılar.
     <System.Diagnostics.DebuggerNonUserCode()> _
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
@@ -23,6 +23,7 @@ Partial Class login
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
+        Me.GunaLabel3 = New Guna.UI.WinForms.GunaLabel()
         Me.Víðarr = New System.ComponentModel.BackgroundWorker()
         Me.elipse_heimdall = New Guna.UI.WinForms.GunaElipse(Me.components)
         Me.GunaElipsePanel1 = New Guna.UI.WinForms.GunaElipsePanel()
@@ -32,12 +33,24 @@ Partial Class login
         Me.auto_check_login = New System.Windows.Forms.Timer(Me.components)
         Me.FormSkin1 = New Global.Heimdall.FormSkin()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.GunaButton1 = New Guna.UI.WinForms.GunaButton()
         Me.GunaCirclePictureBox1 = New Guna.UI.WinForms.GunaCirclePictureBox()
-        Me.GunaLabel3 = New Guna.UI.WinForms.GunaLabel()
         Me.GunaElipsePanel1.SuspendLayout()
-        Me.FormSkin1.SuspendLayout()
+        Me.FormSkin1.SuspendLayout
         CType(Me.GunaCirclePictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
+        '
+        'GunaLabel3
+        '
+        Me.GunaLabel3.AutoSize = True
+        Me.GunaLabel3.BackColor = System.Drawing.Color.Transparent
+        Me.GunaLabel3.Font = New System.Drawing.Font("Trebuchet MS", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(162, Byte))
+        Me.GunaLabel3.ForeColor = System.Drawing.Color.White
+        Me.GunaLabel3.Location = New System.Drawing.Point(137, 9)
+        Me.GunaLabel3.Name = "GunaLabel3"
+        Me.GunaLabel3.Size = New System.Drawing.Size(123, 35)
+        Me.GunaLabel3.TabIndex = 2
+        Me.GunaLabel3.Text = "Heimdall"
         '
         'elipse_heimdall
         '
@@ -48,12 +61,13 @@ Partial Class login
         '
         Me.GunaElipsePanel1.BackColor = System.Drawing.Color.Transparent
         Me.GunaElipsePanel1.BaseColor = System.Drawing.Color.FromArgb(CType(CType(6, Byte), Integer), CType(CType(16, Byte), Integer), CType(CType(27, Byte), Integer))
+        Me.GunaElipsePanel1.Controls.Add(Me.GunaButton1)
         Me.GunaElipsePanel1.Controls.Add(Me.GunaLabel1)
         Me.GunaElipsePanel1.Controls.Add(Me.password)
-        Me.GunaElipsePanel1.Location = New System.Drawing.Point(-1, 49)
+        Me.GunaElipsePanel1.Location = New System.Drawing.Point(-6, 51)
         Me.GunaElipsePanel1.Name = "GunaElipsePanel1"
-        Me.GunaElipsePanel1.Size = New System.Drawing.Size(369, 166)
-        Me.GunaElipsePanel1.TabIndex = 5
+        Me.GunaElipsePanel1.Size = New System.Drawing.Size(375, 184)
+        Me.GunaElipsePanel1.TabIndex = 7
         '
         'GunaLabel1
         '
@@ -61,7 +75,7 @@ Partial Class login
         Me.GunaLabel1.BackColor = System.Drawing.Color.Transparent
         Me.GunaLabel1.Font = New System.Drawing.Font("Trebuchet MS", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(162, Byte))
         Me.GunaLabel1.ForeColor = System.Drawing.Color.White
-        Me.GunaLabel1.Location = New System.Drawing.Point(112, 40)
+        Me.GunaLabel1.Location = New System.Drawing.Point(134, 19)
         Me.GunaLabel1.Name = "GunaLabel1"
         Me.GunaLabel1.Size = New System.Drawing.Size(125, 35)
         Me.GunaLabel1.TabIndex = 4
@@ -76,7 +90,8 @@ Partial Class login
         Me.password.Font = New System.Drawing.Font("Bahnschrift Light", 23.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.password.ForeColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.password.LineColor = System.Drawing.Color.Indigo
-        Me.password.Location = New System.Drawing.Point(21, 78)
+        Me.password.Location = New System.Drawing.Point(37, 60)
+        Me.password.MaxLength = 10
         Me.password.Name = "password"
         Me.password.PasswordChar = Global.Microsoft.VisualBasic.ChrW(9679)
         Me.password.Size = New System.Drawing.Size(309, 56)
@@ -109,8 +124,8 @@ Partial Class login
         Me.FormSkin1.HeaderMaximize = False
         Me.FormSkin1.Location = New System.Drawing.Point(0, 0)
         Me.FormSkin1.Name = "FormSkin1"
-        Me.FormSkin1.Size = New System.Drawing.Size(356, 52)
-        Me.FormSkin1.TabIndex = 4
+        Me.FormSkin1.Size = New System.Drawing.Size(366, 52)
+        Me.FormSkin1.TabIndex = 6
         Me.FormSkin1.Text = "FormSkin1"
         '
         'Label1
@@ -125,6 +140,30 @@ Partial Class login
         Me.Label1.TabIndex = 3
         Me.Label1.Text = "password"
         '
+        'GunaButton1
+        '
+        Me.GunaButton1.AnimationHoverSpeed = 0.07!
+        Me.GunaButton1.AnimationSpeed = 0.03!
+        Me.GunaButton1.BaseColor = System.Drawing.Color.MidnightBlue
+        Me.GunaButton1.BorderColor = System.Drawing.Color.Black
+        Me.GunaButton1.FocusedColor = System.Drawing.Color.Empty
+        Me.GunaButton1.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.GunaButton1.ForeColor = System.Drawing.Color.White
+        Me.GunaButton1.Image = Global.Heimdall.My.Resources.Resources.icons8_eye_64
+        Me.GunaButton1.ImageSize = New System.Drawing.Size(32, 32)
+        Me.GunaButton1.Location = New System.Drawing.Point(78, 129)
+        Me.GunaButton1.Name = "GunaButton1"
+        Me.GunaButton1.OnHoverBaseColor = System.Drawing.Color.FromArgb(CType(CType(151, Byte), Integer), CType(CType(143, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.GunaButton1.OnHoverBorderColor = System.Drawing.Color.Black
+        Me.GunaButton1.OnHoverForeColor = System.Drawing.Color.White
+        Me.GunaButton1.OnHoverImage = Nothing
+        Me.GunaButton1.OnPressedColor = System.Drawing.Color.Black
+        Me.GunaButton1.Radius = 5
+        Me.GunaButton1.Size = New System.Drawing.Size(228, 42)
+        Me.GunaButton1.TabIndex = 5
+        Me.GunaButton1.Text = "Change the Master KEY"
+        Me.GunaButton1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
         'GunaCirclePictureBox1
         '
         Me.GunaCirclePictureBox1.BackColor = System.Drawing.Color.Transparent
@@ -138,38 +177,25 @@ Partial Class login
         Me.GunaCirclePictureBox1.TabStop = False
         Me.GunaCirclePictureBox1.UseTransfarantBackground = False
         '
-        'GunaLabel3
-        '
-        Me.GunaLabel3.AutoSize = True
-        Me.GunaLabel3.BackColor = System.Drawing.Color.Transparent
-        Me.GunaLabel3.Font = New System.Drawing.Font("Trebuchet MS", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(162, Byte))
-        Me.GunaLabel3.ForeColor = System.Drawing.Color.White
-        Me.GunaLabel3.Location = New System.Drawing.Point(137, 9)
-        Me.GunaLabel3.Name = "GunaLabel3"
-        Me.GunaLabel3.Size = New System.Drawing.Size(123, 35)
-        Me.GunaLabel3.TabIndex = 2
-        Me.GunaLabel3.Text = "Heimdall"
-        '
-        'login
+        'master_key
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.Controls.Add(Me.FormSkin1)
+        Me.ClientSize = New System.Drawing.Size(366, 234)
         Me.Controls.Add(Me.GunaElipsePanel1)
-        Me.Name = "login"
-        Me.Size = New System.Drawing.Size(356, 215)
+        Me.Controls.Add(Me.FormSkin1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Name = "master_key"
+        Me.Text = "master_key"
         Me.GunaElipsePanel1.ResumeLayout(False)
         Me.GunaElipsePanel1.PerformLayout()
         Me.FormSkin1.ResumeLayout(False)
-        Me.FormSkin1.PerformLayout()
+        Me.FormSkin1.PerformLayout
         CType(Me.GunaCirclePictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
 
-    Friend WithEvents FormSkin1 As Global.Heimdall.FormSkin
-    Friend WithEvents Label1 As Label
-    Friend WithEvents GunaCirclePictureBox1 As Guna.UI.WinForms.GunaCirclePictureBox
     Friend WithEvents GunaLabel3 As Guna.UI.WinForms.GunaLabel
     Friend WithEvents Víðarr As System.ComponentModel.BackgroundWorker
     Friend WithEvents elipse_heimdall As Guna.UI.WinForms.GunaElipse
@@ -178,4 +204,8 @@ Partial Class login
     Friend WithEvents password As Guna.UI.WinForms.GunaLineTextBox
     Friend WithEvents elipse_password As Guna.UI.WinForms.GunaElipse
     Friend WithEvents auto_check_login As Timer
+    Friend WithEvents FormSkin1 As Global.Heimdall.FormSkin
+    Friend WithEvents Label1 As Label
+    Friend WithEvents GunaCirclePictureBox1 As Guna.UI.WinForms.GunaCirclePictureBox
+    Friend WithEvents GunaButton1 As Guna.UI.WinForms.GunaButton
 End Class

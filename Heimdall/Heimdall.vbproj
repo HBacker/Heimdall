@@ -104,6 +104,12 @@
     <Compile Include="login.vb">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="master_key.Designer.vb">
+      <DependentUpon>master_key.vb</DependentUpon>
+    </Compile>
+    <Compile Include="master_key.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="MonoFlat_Tema.vb">
       <SubType>Component</SubType>
     </Compile>
@@ -136,6 +142,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="login.resx">
       <DependentUpon>login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="master_key.resx">
+      <DependentUpon>master_key.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>

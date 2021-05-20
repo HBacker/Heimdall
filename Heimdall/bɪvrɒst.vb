@@ -8,9 +8,17 @@ Public NotInheritable Class bɪvrɒst
 
 
     Private Sub bɪvrɒst_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
-
+        play_heimdall_open_the_bifröst()
     End Sub
-
+    Sub play_heimdall_open_the_bifröst()
+        My.Computer.Audio.Play("E:\HBR\Lib\heimdall_open_the_bifröst.wav",
+        AudioPlayMode.WaitToComplete)
+        player.Start()
+    End Sub
+    Sub play_dragon()
+        My.Computer.Audio.Play("E:\HBR\Lib\dragon.wav",
+        AudioPlayMode.Background)
+    End Sub
     Private Sub Hǫfuð_Tick(sender As Object, e As EventArgs) Handles Hǫfuð.Tick
         Me.Hide()
         Heimdall.Show()
@@ -42,7 +50,21 @@ Public NotInheritable Class bɪvrɒst
         Application.Restart()
     End Sub
 
-    Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
+    Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles heimdall_eye.Click
 
     End Sub
+
+    Private Sub bɪvrɒst_KeyDown(sender As Object, e As KeyEventArgs) Handles Me.KeyDown
+        If Control.ModifierKeys = Keys.Shift Or Control.ModifierKeys = Keys.F11 Then
+            master_key.Show()
+        Else
+
+        End If
+    End Sub
+
+    Private Sub player_Tick(sender As Object, e As EventArgs) Handles player.Tick
+        player.Stop()
+        play_dragon()
+    End Sub
+
 End Class

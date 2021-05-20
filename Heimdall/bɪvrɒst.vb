@@ -5,17 +5,9 @@ Public NotInheritable Class bɪvrɒst
     Dim herald_path As String
     Dim herald_prefix As String = "herald:"
     Dim herald_message As String
+
+
     Private Sub bɪvrɒst_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
-        Dim location As String = System.Environment.GetCommandLineArgs()(0)
-        Dim appName As String = System.IO.Path.GetFileName(location)
-        app_path = AppDomain.CurrentDomain.BaseDirectory + appName.ToString
-
-        herald_path = "E:\HBR\Herald.lnk"
-
-        Dim go_herald = New ProcessStartInfo(herald_path)
-        herald_message = "Bu bir test mesajıdır."
-        go_herald.Arguments = herald_prefix + herald_message
-        Process.Start(go_herald)
 
     End Sub
 
@@ -26,6 +18,19 @@ Public NotInheritable Class bɪvrɒst
     End Sub
 
     Private Sub Víðarr_DoWork(sender As Object, e As System.ComponentModel.DoWorkEventArgs) Handles Víðarr.DoWork
+
+    End Sub
+
+    Sub go_herald()
+        Dim location As String = System.Environment.GetCommandLineArgs()(0)
+        Dim appName As String = System.IO.Path.GetFileName(location)
+        app_path = AppDomain.CurrentDomain.BaseDirectory + appName.ToString
+
+        herald_path = "E:\HBR\Herald.lnk"
+
+        Dim go_herald = New ProcessStartInfo(herald_path)
+        go_herald.Arguments = herald_prefix + herald_message
+        Process.Start(go_herald)
 
     End Sub
 

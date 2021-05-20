@@ -21,7 +21,7 @@ Public NotInheritable Class bɪvrɒst
     End Sub
     Private Sub Hǫfuð_Tick(sender As Object, e As EventArgs) Handles Hǫfuð.Tick
         Me.Hide()
-        Heimdall.Show()
+
         Hǫfuð.Stop()
     End Sub
 

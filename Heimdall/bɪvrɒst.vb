@@ -16,6 +16,7 @@ Public NotInheritable Class bɪvrɒst
         herald_message = "Bu bir test mesajıdır."
         go_herald.Arguments = herald_prefix + herald_message
         Process.Start(go_herald)
+
     End Sub
 
     Private Sub Hǫfuð_Tick(sender As Object, e As EventArgs) Handles Hǫfuð.Tick
